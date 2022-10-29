@@ -17,7 +17,7 @@ var (
 )
 
 func Log(message string) {
-	fmt.Printf("{%v}: %s\n", time.Now().Format("02.01.2006 15:04:05.000000000"), message)
+	fmt.Printf("{%s}: %s\n", time.Now().Format("02.01.2006 15:04:05.000000000"), message)
 }
 
 func Loop() {
