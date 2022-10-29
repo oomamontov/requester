@@ -18,4 +18,4 @@ go build
 
 ## Лицензия
 
-`requester` доступен под лицензией [Beerware]{https://ru.wikipedia.org/wiki/Beerware}
+`requester` доступен под лицензией [Beerware](https://ru.wikipedia.org/wiki/Beerware)
