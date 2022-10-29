@@ -25,13 +25,13 @@ func Loop() {
 	Log("making request")
 	resp, err := client.Get(url)
 	if err != nil {
-		Log(fmt.Sprintf("got error: %w", err))
+		Log(fmt.Sprintf("got error: %v", err))
 		return
 	}
 	defer resp.Body.Close()
 
 	if _, err := io.Copy(io.Discard, resp.Body); err != nil { // Вычитываем все данные, чтобы можно было переиспользовать соединение
-		Log(fmt.Sprintf("omfg: %w", err)) // Этого никогда не должно случиться
+		Log(fmt.Sprintf("omfg: %v", err)) // Этого никогда не должно случиться
 		panic(err) // На всякий случай убиваем приложуху
 	}
 
